@@ -4,7 +4,7 @@ author: tomoyk
 twitter:
   username: hoge
 disqus: 
-color: \#2565a3 # web color
+color: rgb(37,101,163) # web color
 branch: master # where your github pages hosted branch
 
 permalink: /items/:title
