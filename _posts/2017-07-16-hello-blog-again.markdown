@@ -3,7 +3,6 @@ layout: post
 title:  "Hello blog"
 date:   2017-07-16 20:01:14 +0900
 tags: jekyll otaku
-permalink: /
 ---
 # Hello again
 
