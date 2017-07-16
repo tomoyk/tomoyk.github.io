@@ -1,3 +1,6 @@
+
+@import "{{ site.theme }}";
+
 header.site-header {
   background: #ad1;
 }

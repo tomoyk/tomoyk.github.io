@@ -1,32 +1,38 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+title: TEST BLOG
+subtitle: this is my test blog
+author: tomoyk
+twitter:
+  username: hoge
+disqus: 
+color: limegreen # web color
+branch: master # where your github pages hosted branch
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Test BLOG
-email: admin@github.io
-description: > # this means to ignore newlines until "baseurl:"
-  Test BLOG with jekyll on github-pages.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: twi_twi
-github_username:  git-git
+permalink: /items/:title
+search_engine: https://www.google.com/search
+paginate: 5
+paginate_path: "/page/:num"
+jekyll-mentions: https://twitter.com
+feed:
+  path: /atom.xml
 
-# Build settings
-markdown: kramdown
-theme: minima
-gems:
-  - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
+gems:
+  - jekyll-avatar
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-mentions
+  - jekyll-sitemap
+  - jemoji
+  - jekyll-feed
+  # Add more you want
+markdown: kramdown
+kramdown:
+  auto_ids:       true
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  input:          GFM
+  hard_wrap:      true
+  footnote_nr:    1
